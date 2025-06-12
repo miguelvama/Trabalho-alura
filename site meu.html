@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - Miguel Valério Malinoski</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0 20px;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 30px 0;
+      background-color: #222;
+      color: white;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2em;
+    }
+    h2 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    .skills {
+      margin-bottom: 40px;
+    }
+    .skills p {
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+    .projects {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .projects img {
+      width: 32%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+    @media (max-width: 800px) {
+      .projects {
+        flex-direction: column;
+      }
+      .projects img {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://res.cloudinary.com/coinfactory/image/upload/v1733347492/api/hitohnhb5c0iees3iocl.jpg" alt="Foto de perfil do Miguel Valério Malinoski" />
+    <h1>Miguel Valério Malinoski</h1>
+    <p>Sonhando em ser engenheiro mecânico para trabalhar com carros.</p>
+  </header>
+
+  <div class="container">
+    <section class="skills">
+      <h2>Habilidades</h2>
+      <p>
+        - Entendimento básico de motores e sistemas mecânicos<br />
+        - Capacidade de trabalho em equipe e resolução de problemas<br />
+        - Noções básicas de programaçâo<br />
+        - Interesse em desenvolvimento sustentável e inovação automotiva
+      </p>
+    </section>
+
+    <section class="projects">
+      <img src="https://speednik.s3.amazonaws.com/powerautorax55/wp-content/blogs.dir/1/files/2014/01/2018-02-09_09-05-57_305391.jpg" alt="Projeto 1" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjjELjUSmEyBeOCcLulzV1xbYQITn11YWYw&s" alt="Projeto 2" />
+      <img src="https://encurtador.com.br/CcGwF" alt="Projeto 3" />
+    </section>
+  </div>
+</body>
+</html>
