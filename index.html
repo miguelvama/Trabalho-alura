@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <head>
+    <title>Mostrar Data e Hora</title>
+    <script>
+        function showDateTime() {
+            let now = new Date();
+            document.getElementById("datetime").innerHTML = now.toString();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showDateTime()">Mostrar Data e Hora</button>
+    <p id="datetime"></p>
+</body>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfólio - Miguel Valério Malinoski</title>
@@ -84,6 +98,12 @@
   </header>
 
   <div class="container">
+    <section class="image-switcher">
+  <h2>Motor V12 / Motor V6 Híbrido</h2>
+  <img id="imagem-trocar" src="https://via.placeholder.com/300x200.png?text=Imagem+1" alt="Imagem Troca" style="max-width:100%; border-radius:8px;">
+  <br><br>
+  <button onclick="trocarImagem()">Trocar Imagem</button>
+</section>
     <section class="skills">
       <h2>Habilidades</h2>
       <p>
@@ -93,6 +113,11 @@
         - Interesse em desenvolvimento sustentável e inovação automotiva
       </p>
     </section>
+    <section class="custom-style">
+  <h2>Corrida esse final de semana</h2>
+  <p id="paragrafo-alvo">Este final de semana tem 24h de Nurburgring😁.</p>
+  <button onclick="mudarEstilo()">Alterar Estilo</button>
+</section>
 
     <section class="projects">
       <img src="https://speednik.s3.amazonaws.com/powerautorax55/wp-content/blogs.dir/1/files/2014/01/2018-02-09_09-05-57_305391.jpg" alt="Projeto 1" />
@@ -100,5 +125,32 @@
       <img src="https://encurtador.com.br/CcGwF" alt="Projeto 3" />
     </section>
   </div>
+<script>
+  function mudarEstilo() {
+    var p = document.getElementById("paragrafo-alvo");
+    p.style.color = "#FFA500";          
+    p.style.fontSize = "20px";           
+    p.style.fontWeight = "bold";        
+    p.style.fontStyle = "italic";       
+    p.style.backgroundColor = "#fce4ec"; 
+    p.style.padding = "10px";            
+    p.style.borderRadius = "8px";      
+  }
+</script>
+<script>
+  var mostrandoImagem1 = true;
+
+  function trocarImagem() {
+    var img = document.getElementById("imagem-trocar");
+
+    if (mostrandoImagem1) {
+      img.src = "https://p.turbosquid.com/ts-thumb/XT/iZuWg7/z7XCbqjG/v12_01/png/1450697498/600x600/fit_q87/aeb85337fc2d1f5746066a127e2dc9437c3e6546/v12_01.jpg";
+    } else {
+      img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnwYTg3zGjl4OJG9BlhSlQWhRS_zYLMl0j-w&s";
+    }
+
+    mostrandoImagem1 = !mostrandoImagem1; // inverte o estado
+  }
+</script>
 </body>
 </html>
